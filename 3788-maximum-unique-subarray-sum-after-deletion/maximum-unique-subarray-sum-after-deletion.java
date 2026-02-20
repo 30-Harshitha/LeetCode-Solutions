@@ -11,8 +11,6 @@ class Solution {
                 set.add(num);
             }
         }
-
-        // If we have positive numbers, sum them
         if (!set.isEmpty()) {
             int sum = 0;
             for (int num : set) {
@@ -21,7 +19,6 @@ class Solution {
             return sum;
         }
 
-        // If all numbers are negative, return the maximum
         return max;
     }
 }
