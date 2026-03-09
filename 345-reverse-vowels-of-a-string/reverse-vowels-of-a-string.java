@@ -13,11 +13,11 @@ class Solution {
                 i++;
                 j--;
             }
-            if(vowels.contains(a[i])&&(!(vowels.contains(a[j]))))
+            else if(vowels.contains(a[i])&&(!(vowels.contains(a[j]))))
             {
                 j--;
             }
-             if(!vowels.contains(a[i])&&(vowels.contains(a[j])))
+            else if(!vowels.contains(a[i])&&(vowels.contains(a[j])))
             {
                 i++;
             }
