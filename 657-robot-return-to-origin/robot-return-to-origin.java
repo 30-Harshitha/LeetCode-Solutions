@@ -3,14 +3,15 @@ class Solution {
         int l=0,w=0;
         for(int i=0;i<m.length();i++)
         {
-            if(m.charAt(i)=='U')
+            if(m.charAt(i)=='L')
             l++;
-            else if(m.charAt(i)=='L')
-            w--;
-            else if(m.charAt(i)=='D')
+            if(m.charAt(i)=='R')
             l--;
-            else if(m.charAt(i)=='R')
+            if(m.charAt(i)=='U')
             w++;
+            if(m.charAt(i)=='D')
+            w--;
+
         }
         if(l==0&&w==0)
         return true;
