@@ -11,8 +11,7 @@ public:
             if(c>m)
             m=c;
         }
-        if(s.size()==1)
-        return 1;
+        
         return m;
      }  
 };
